@@ -1,14 +1,12 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom'; //used for websites, the dom, could be ReactNative, for mobile phones.
 import './index.css';
-import App from './App';
+import Hello from './Hello';
 import reportWebVitals from './reportWebVitals';
+import 'tachyons';
 
 ReactDOM.render(
-  <React.StrictMode>
-  <h1>Hello World</h1>
-    <App />
-  </React.StrictMode>,
+    <Hello greeting={'Hello React Ninja'} />, //created our own tag/component: Hello. and created a greeting property.
   document.getElementById('root')
 );
 

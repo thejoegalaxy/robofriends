@@ -3,7 +3,7 @@ import './App.css';
 import React from 'react';
 
 class App extends React.Component {
-  render() {
+  render() { //component must render something...
     return (
       <div className="App">
         <header className="App-header">
