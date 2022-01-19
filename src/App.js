@@ -2,6 +2,7 @@ import React from 'react';
 import CardList from './CardList';
 import Searchbox from './Searchbox';
 import './App.css';
+import Scroll from './Scroll';
 // parent to child properties
 // STATE >> props
 
@@ -39,7 +40,9 @@ class App extends React.Component {
         <div className="tc">
           <h1 className="f2"> RoboFriends</h1>
           <Searchbox searchChange={this.onSearchChange} />
-          <CardList robots={filteredRobots} />
+          <Scroll>
+            <CardList robots={filteredRobots} />
+          </Scroll>
         </div>
       );
     }
