@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom'; //used for websites, the dom, could be ReactNative, for mobile phones.
 import './index.css';
-import App from './App';
+import App from './containers/App';
 import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 
